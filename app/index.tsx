@@ -13,7 +13,7 @@ const HomeScreen = () => {
   return (
     <SafeAreaView edges={['bottom']} style={{ flex: 1}}>
        <Stack.Screen options={{ title: 'Camera' }} />
-       <Link href="../camera" asChild>
+       <Link href="./camera" asChild>
           <Button title="Go to Camera App" />
        </Link>
     </SafeAreaView>
