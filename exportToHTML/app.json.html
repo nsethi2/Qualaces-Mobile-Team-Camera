@@ -1,0 +1,38 @@
+<html>
+<head>
+<title>app.json</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #bcbec4;}
+.s1 { color: #bcbec4;}
+.s2 { color: #6aab73;}
+.s3 { color: #2aacb8;}
+</style>
+</head>
+<body bgcolor="#1e1f22">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+app.json</font>
+</center></td></tr></table>
+<pre><span class="s0">{</span>
+  <span class="s2">&quot;expo&quot;</span><span class="s0">: {</span>
+    <span class="s2">&quot;name&quot;</span><span class="s0">: </span><span class="s2">&quot;camera-app&quot;</span><span class="s0">,</span>
+    <span class="s2">&quot;slug&quot;</span><span class="s0">: </span><span class="s2">&quot;camera-app&quot;</span><span class="s0">,</span>
+    <span class="s2">&quot;scheme&quot;</span><span class="s0">: </span><span class="s2">&quot;camera-app&quot;</span><span class="s0">,</span>
+    <span class="s2">&quot;plugins&quot;</span><span class="s0">: [</span>
+      <span class="s2">&quot;expo-router&quot;</span><span class="s0">,</span>
+      <span class="s0">[</span><span class="s2">&quot;expo-splash-screen&quot;</span><span class="s0">, { </span><span class="s2">&quot;image&quot;</span><span class="s0">: </span><span class="s2">&quot;./assets/images/splash-icon.png&quot;</span><span class="s0">, </span><span class="s2">&quot;imageWidth&quot;</span><span class="s0">: </span><span class="s3">200</span><span class="s0">, </span><span class="s2">&quot;resizeMode&quot;</span><span class="s0">: </span><span class="s2">&quot;contain&quot;</span><span class="s0">, </span><span class="s2">&quot;backgroundColor&quot;</span><span class="s0">: </span><span class="s2">&quot;#ffffff&quot; </span><span class="s0">}],</span>
+      <span class="s0">[</span><span class="s2">&quot;expo-camera&quot;</span><span class="s0">]</span>
+    <span class="s0">],</span>
+    <span class="s2">&quot;ios&quot;</span><span class="s0">: {</span>
+      <span class="s2">&quot;infoPlist&quot;</span><span class="s0">: { </span><span class="s2">&quot;NSCameraUsageDescription&quot;</span><span class="s0">: </span><span class="s2">&quot;This app uses the camera to take pictures.&quot; </span><span class="s0">}</span>
+    <span class="s0">},</span>
+    <span class="s2">&quot;android&quot;</span><span class="s0">: {</span>
+      <span class="s2">&quot;permissions&quot;</span><span class="s0">: [</span><span class="s2">&quot;CAMERA&quot;</span><span class="s0">]</span>
+    <span class="s0">}</span>
+  <span class="s0">}</span>
+<span class="s0">}</span>
+</pre>
+</body>
+</html>
