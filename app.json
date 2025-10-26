@@ -17,12 +17,23 @@
       "supportsTablet": true,
       "bundleIdentifier": "com.kentma.reactcameraapp",
       "infoPlist": {
-        "NSCameraUsageDescription": "Scan text from camera."
+        "NSCameraUsageDescription": "This app uses the camera to allow you to take and upload photos.",
+        "NSPhotoLibraryUsageDescription": "This app needs access to your photos to allow you to select and upload them.",
+        "NSPhotoLibraryAddUsageDescription": "This app needs to save photos to your library.",
+        "ITSAppUsesNonExemptEncryption": false
       }
     },
     "android": {
-      "package": {"permissions": ["CAMERA"]}
-    }
+      "package": "com.kentma.reactcameraapp"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "420fad77-b39b-4586-aebc-362970cb1da9"
+      }
+    },
+    "plugins": [
+      "react-native-vision-camera"
+    ]
   },
   "android": {
     "adaptiveIcon": {
@@ -48,17 +59,18 @@
   "plugins": [
     "expo-router",
     [
-      "expo-camera",
+      "react-native-vision-camera",
       {
-        "cameraPermission": "Allow $(PRODUCT_NAME) to access your camera",
-        "microphonePermission": "Allow $(PRODUCT_NAME) to access your microphone",
-        "recordAudioAndroid": true
+        "cameraPermissionText": "Allow $(PRODUCT_NAME) to access your camera",
+        "enableMicrophonePermission": true,
+        "microphonePermissionText": "Allow $(PRODUCT_NAME) to access your microphone"
       }
     ],
     [
       "expo-media-library",
       {
-        "photosPermission": "Allow $(PRODUCT_NAME) to save photos to your library"
+        "photosPermission": "Allow $(PRODUCT_NAME) to access your photos.",
+        "isAccessMediaLocationEnabled": true
       }
     ]
   ],

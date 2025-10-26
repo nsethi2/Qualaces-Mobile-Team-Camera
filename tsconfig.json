@@ -5,7 +5,11 @@
     "strict": true,
     "allowJs": true,
     "isolatedModules": true,
-    "types": ["react", "react-native", "expo"]
+    "types": ["react", "react-native", "expo"],
+    "lib": [
+      "dom",
+      "es2017"
+    ]
   },
   "include": ["**/*.ts", "**/*.tsx"],
   "exclude": ["node_modules"]
