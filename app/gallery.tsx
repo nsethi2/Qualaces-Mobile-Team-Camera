@@ -113,7 +113,7 @@ export default function GalleryScreen() {
                       </TouchableOpacity>
                   );
               }
-              return null; // Show default back button or nothing
+              return null;
           },
           
           // Header RIGHT: Select/Done Button (Uses toggleSelectionMode directly)

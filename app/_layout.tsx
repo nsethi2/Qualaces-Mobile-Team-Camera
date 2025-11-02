@@ -21,7 +21,13 @@ export default function RootLayout() {
         options={{ 
           headerTitle: 'Text Preview', 
         }} 
-      />      
+      />
+      <Stack.Screen
+        name="[id]"
+        options={{
+          headerTitle: "Photo Detail",
+        }}
+      />   
     </Stack>
       );
 }
